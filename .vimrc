@@ -1,49 +1,42 @@
+" PlugInstall to install all plugins
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
 
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"test configs, at .vim dir
+"runtime vim_test 
+"runtime rails_plugins
+"runtime qt_plugins
+
+"Common 
+" Complete engine
+" Run after install in plugin install  python3 install.py --all 
 Plug 'ycm-core/YouCompleteMe'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mattn/emmet-vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
-
-Plug 'tpope/vim-rails'
-
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Shougo/denite.nvim'
+Plug 'tpope/vim-surround'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'jiangmiao/auto-pairs'
+"git helper
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'tpope/vim-endwise'
+" cow at start
+Plug 'mhinz/vim-startify'
+
+"colorscheme
+Plug 'beigebrucewayne/hacked_ayu.vim'
+Plug 'jpo/vim-railscasts-theme'
 
 "cool status line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'leafgarland/typescript-vim'
-Plug 'Quramy/tsuquyomi'
-
-"git helper PlugInstall
-Plug 'tpope/vim-fugitive'
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-haml'
-Plug 'tpope/vim-cucumber'
-Plug 'skalnik/vim-vroom'
-Plug 'tpope/vim-endwise'
-Plug 'ervandew/supertab'
-Plug 'mhinz/vim-startify'
-Plug 'beigebrucewayne/hacked_ayu.vim'
-Plug 'kchmck/vim-coffee-script'
-Plug 'pangloss/vim-javascript'
-Plug 'posva/vim-vue'
-Plug 'airblade/vim-gitgutter'
-"Plug 'vim-ctrlspace/vim-ctrlspace'
-Plug 'Shougo/denite.nvim'
-Plug 'tpope/vim-surround'
-Plug 'peterhoeg/vim-qml'
-Plug 'fedorenchik/qt-support.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'rust-lang/rust.vim'
-Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
 "emmet key to use
@@ -115,11 +108,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
-
-"ctrlspace need options
-"set nocompatible
-"set hidden
-"set showtabline=0
 
 set showcmd
 
