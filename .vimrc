@@ -30,7 +30,7 @@ Plug 'tpope/vim-endwise'
 Plug 'mhinz/vim-startify'
 
 "colorscheme
-Plug 'beigebrucewayne/hacked_ayu.vim'
+Plug 'andreweduffy/hacked_ayu.vim'
 Plug 'jpo/vim-railscasts-theme'
 
 "cool status line
