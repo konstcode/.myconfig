@@ -13,7 +13,7 @@ call plug#begin('~/.vim/plugged')
 "Common 
 " Complete engine
 " Run after install in plugin install  python3 install.py --all 
-Plug 'ycm-core/YouCompleteMe'
+"Plug 'ycm-core/YouCompleteMe'
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -36,6 +36,9 @@ Plug 'jpo/vim-railscasts-theme'
 "cool status line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+"Rust
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
