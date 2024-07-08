@@ -68,7 +68,8 @@ imap jj <Esc>
 
 set number relativenumber       " Display line numbers
 set nobackup                    " No auto backups
-set clipboard=unnamedplus       " Copy/paste between vim and other programs.
+"set clipboard=unnamedplus       " Copy/paste between vim and other programs.
+set clipboard=unnamed       " Copy/paste between vim and other programs.
 set noswapfile                  " No swap
 
 " Make adjusing split sizes a bit more friendly
