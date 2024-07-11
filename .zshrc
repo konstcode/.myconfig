@@ -30,8 +30,14 @@ export LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:$HOME/.config/tmux/plugins/tmuxifier/bin"
 alias vim="/usr/bin/nvim"
 alias ls="$HOME/.cargo/bin/eza"
 
 eval "$(zoxide init --cmd cd zsh)"
 
+setxkbmap -option ctrl:nocaps
+
+#disable auto correct
+unsetopt correct_all
+unsetopt correct

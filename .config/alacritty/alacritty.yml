@@ -153,7 +153,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#1e1e1e'
+    background: '#252538'
+    # background: '#1e1e1e'
     foreground: '#d6d6d6'
 
     dim_foreground:    '#dbdbdb'
@@ -444,8 +445,21 @@ colors:
   #vi_mode_style: None
 
   # Cursor blinking interval in milliseconds.
-  #blink_interval: 750
+  blink_interval: 0
 
+# Use a lower DPI scaling factor for better performance
+# This might be particularly useful on HiDPI displays
+window:
+  dynamic_title: false  # Disable dynamic title to reduce overhead
+
+# If you experience issues with glyph rendering, consider disabling this
+# experimental:
+#   persistent_logging: true
+
+# Set renderer settings
+renderer:
+  # Disable vsync for potentially smoother rendering (can cause tearing)
+  vsync: false
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   #unfocused_hollow: true
