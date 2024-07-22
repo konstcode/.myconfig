@@ -81,3 +81,11 @@ vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.o.conceallevel = 2
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown", -- or any other filetype you are using with obsidian.nvim
+  callback = function()
+    vim.cmd("setlocal spell")
+    vim.cmd("setlocal spelllang=en_us,ru")
+  end,
+})
