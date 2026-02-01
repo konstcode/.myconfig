@@ -15,9 +15,6 @@ export PATH
 
 # Customize to your needs...
 fpath=($fpath "/home/nafanya/.zfunctions")
-
-  # Set Spaceship ZSH as a prompt
-  prompt sorin
   
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias notes='/usr/bin/git --git-dir=$HOME/Documents/notes/.notes.git --work-tree=$HOME/Documents/notes'
